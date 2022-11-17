@@ -1,9 +1,18 @@
-const Header = () => {
+const Header = ({ title }) => {
+  const headerStyle = {
+    backgroundColor: "royalblue",
+    color: "white"
+  }
+
   return (
-    <header>
-        <h1>Groceries List</h1>
+    <header style={headerStyle}>
+        <h1>{title}</h1>
     </header>
   )
+}
+
+Header.defaultProps = {
+  title: "Default Title"
 }
 
 export default Header

@@ -1,12 +1,20 @@
-import handleNameChange from "./handleNameChange"
+import ItemList from './ItemList'
 
-const Content = () => {
+const Content = ({ items, handleCheck, handleDelete }) => {
 
   return (
     <main>
-        <p>
-            Hello {handleNameChange()}!
-        </p>
+        {items.length ? (
+          <ItemList
+            items={items}
+            handleCheck={handleCheck}
+            handleDelete={handleDelete}
+          />
+          ) : (
+            <p style={{ marginTop: '2rem' }}>
+              Your list is empty.
+            </p>
+          )}
     </main>
   )
 }
