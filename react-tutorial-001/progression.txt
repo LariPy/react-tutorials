@@ -1,0 +1,169 @@
+part 01 done
+part 02 done
+part 03 done
+part 04 - style stuff - done
+part 05
+
+this anonymous function is not called into action until the click
+and then when this function is called into action it calls this action
+
+button stuff, useState in next part
+
+part 06
+
+import useState from react
+now we can the useState hook inside our component
+we start out by defining what we will use for state
+we are going to use a name and then setName
+this is array destructuring that we get from useState
+first value 'name' will provide the current state at any given point in time
+and setName, we can set the state with it
+we can think about it like this
+name is getter, setName is setter
+const [getter, setter] = useState('default state')
+
+part 07
+
+left at 15:20
+
+part 08
+
+<Component componentprop:"propname" />
+const Component = (props)
+<p>{props.componentprop}</p>
+
+destructuring
+
+const Component = ({ componentprop })
+<p>{componentprop}</p>
+
+default props
+
+<Component />
+...
+Component.defaultProps = {
+    prop: "Default prop"
+}
+
+moving state to the parent component
+
+part 09
+
+minimum 48px/48px usually button icon size for fingers (smartphones)
+
+useState and handle
+useState is a thingy from react
+you use it like this
+const [items, setItems] = useState('')
+there can be stuff inside useState(here)
+useState (probably, at least in some cases)
+needs some sort of handler
+or rather, that might be a mistaken way of
+thinking about it
+
+in this practice project this items, set items
+use state thing is used for checkmark and delete
+and the check and delete need handlers
+and these handlers use the useState stuff
+
+later there is newItem, setNewItem useState
+for adding new items
+and this also needs a handler handleSubmit
+
+in other words this is one way to do these kinds
+event thingies
+
+the set thingy is for setting state
+in some thingies it's used to empty the field?
+
+items, setItems is the list itself?
+
+e.preventDefault() prevents state from updating?
+or at least prevent the page from updating
+
+part 10
+
+was a challenge project, done
+
+part 11
+
+done
+
+part 12
+
+done
+
+part 13
+
+done
+
+part 14
+
+notes
+so far
+made folder called "data"
+made file named "db.json" in there
+used json server thingy from part 12
+npx json-server -p 3500 -w data/db.json
+this is a fast way to make a basic server thingy
+for testing purposes
+I could probably do it myself somehow
+find out how?
+I think I have done the server part once
+so it's a matter of making a json database
+and making a connection into it
+and then making the crud operations for it
+
+crud operations done, go through them to figure out
+how exactly they work
+review
+
+-------
+how does crud work in this example
+
+in App.js there is API_URL, which is the url for the server
+in this case, json server(?) in localhost port 3500
+
+this app uses useEffect
+
+what is useEffect?
+it has something to do with loading stuff
+makes sure that this one thing is loaded only once
+so that some stuff is not loaded multiple times for
+no reason or something like that
+
+inside useEffect function there is fetchItems function (async)
+inside a try block
+it fetches the API_URL (server url)
+(if response is not ok, throws error)
+awaits json stuff from where it fetches stuff
+defines it as listItems
+sets listItems as the received listItems data
+sets fetch error to null (in case there was an error)
+catches error, sends error message
+finally sets isLoading to false (loading is true)
+
+extra stuff for testing purposes
+setTimeout, awaits fetchItems, waits 2000
+(simulates lag basically)
+
+there's a module/component called apiRequest.js
+it's called in crud operations at the end
+
+it's an async function, as parameters it accepts
+url, optionsObj and errMsg, all of which have
+empty default values
+
+try block
+waits for response, fetch(url, optionsObj)
+in other words it waits for the api url and crud operation options
+which define if its create, read, update or delete
+if response is not ok, throw error "please reload app"
+the rest of the stuff is error handling stuff
+if there's a different kind of error (?)
+catch error, return error (which will be null by default
+if there is no error)
+-------
+
+
+part 15
