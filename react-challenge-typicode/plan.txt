@@ -1,0 +1,108 @@
+React Challenge
+Fetch API Data
+
+https://www.youtube.com/watch?v=lf_uNOKVSnM
+
+Fetch API Data from typicode.
+
+Do it like in the video.
+
+
+
+What is required
+
+basically there's 3 buttons on top of the screen
+(button stuff doesn't matter that much,
+only their functions)
+
+the rest of the screen is for text that appears
+when a button is clicked
+
+each button fetches specific data
+fetch? get? post?
+
+use tutorial 001 as help
+
+
+
+how to proceed exactly?
+
+using react
+install dependencies?
+
+in the tutorial project
+there's a database
+API_URL
+basically the target api we want to
+fetch data from is this API_URL
+
+create apiRequests.js for handling stuff?
+
+check how buttons work from that project
+come up with some css
+make it so that received data is shown on the rest of the screen
+
+that's it?
+
+
+
+what first
+need buttons
+need a view that changes
+when button is pressed
+useState?
+so view, setview?
+default view empty?
+this could be used by multiple buttons?
+button A sets view to view A and so on?
+
+2 buttons
+square
+each button changes what text is shown
+inside square
+
+in the other project
+App returns Content
+Content returns ItemList
+ItemList is the content
+
+in other words
+
+fetch stuff from target api
+get it to Content component
+App shows Content
+
+button is pressed
+data is fetched
+data is put to Content
+view (table?) is changed to show Content
+
+
+
+from Buttons.js
+/*
+optional stuff:
+when hover over button
+some sort of visual change on button
+
+don't forget aria-label
+
+if importing multiple buttons from one component
+then perhaps I will have to make it so that
+it's a section or something that has
+the buttons inside
+in other words import a whole section
+ready made with all the buttons inside
+rather than individual buttons to App
+
+maybe have App return Header and Content (maybe Footer)
+and import buttons to Header
+
+however
+if buttons are in header
+and there's useState and useEffect stuff
+that buttons might need...
+props will have to be sent down to
+content and then buttons
+I guess it's not a problem though
+*/
