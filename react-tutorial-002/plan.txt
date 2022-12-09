@@ -1,0 +1,100 @@
+https://www.youtube.com/watch?v=Cv_JhlKUpto
+
+making some sort of blog app
+
+start with basic setup
+npx create-react-app
+remove useless bits
+(remember also index.html)
+
+npm i react-router-dom -S
+
+in index.js
+do routing stuff
+(video was a little bit outdated)
+<BrowserRouter>
+    <App />
+</BrowserRouter>
+
+in App.js
+in advance, make all the imports for future components
+place them inside the function
+
+Header, Nav and Footer are things we want to see always
+the rest we don't want to see/load at the same time
+only see one at a time
+<Routes>
+    <Route path='/' element={<Home />} />
+    <Route path='/about' element={<About />} />
+</Routes>
+for example
+
+this way the page always shows header, nav, footer
+and only one of those things inside Routes
+if the url is changed to /about
+you don't see home, you see about
+later do nav stuff to be able to change this
+
+the first video is a bit outdated, use this as help
+https://www.youtube.com/watch?v=Ul3y1LXxzdU
+
+add the rest of the components inside that routes thing
+then proceed to next video
+
+
+
+left at 7:18
+https://www.youtube.com/watch?v=eHnqS9kMH-s
+
+started with some useState stuff
+for posts and search
+
+then started working on Home.js
+where posts are shown
+need to pass down props
+
+Home -> Feed -> Post
+
+Post takes to PostPage
+
+
+posts need a way to be created (create)
+and a way to be deleted (delete)
+
+so handleSubmit, handleDelete
+
+probably also a way to edit at some point? (update, patch)
+
+handleSubmit
+
+handleDelete
+filters target id post from list of posts
+sets new list of posts (without the removed id)
+navigates back to root
+
+install datetime stuff
+npm i date-fns -S
+
+
+
+things done
+
+make posts show
+post handleSubmit
+post handleDelete
+
+
+---
+
+part 18
+some css stuff
+
+---
+
+part 19
+
+---
+
+part 20
+https://youtu.be/tBuceoEGFhI?t=1040
+17:20
