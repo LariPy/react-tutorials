@@ -2,6 +2,16 @@ https://www.youtube.com/watch?v=Cv_JhlKUpto
 
 making some sort of blog app
 
+////
+important stuff
+
+for database testing purposes
+during development:
+
+npm i json-server
+npx json-server -p 3500 -w data/db.json
+////
+
 start with basic setup
 npx create-react-app
 remove useless bits
@@ -96,14 +106,15 @@ part 19
 ---
 
 part 20
-https://youtu.be/tBuceoEGFhI?t=1040
-17:20
 
-- problems -
+part 21
+https://www.youtube.com/watch?v=ngVvDegsAW8
 
-tried npm start
-app works
-but cannot make new posts
-there's that database thingy
-have to run it with some command
-its in some video
+refactoring
+in other words cleaning App.js
+making context api
+(what for?)
+
+https://youtu.be/ngVvDegsAW8?t=303
+
+
