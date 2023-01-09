@@ -117,4 +117,24 @@ making context api
 
 https://youtu.be/ngVvDegsAW8?t=303
 
+datacontext
+what is datacontext?
+"...we can now pass through datacontext.provider
+and out data provider
+will provide it to the different components
+as we request them with the usecontext hook"
 
+moving stuff from app.js
+everything from after the components
+(note, what order to put stuff in the app import list:
+components at the top, everything else at the bottom?)
+except dataprovider because we need it there
+
+
+
+part 22
+
+redux easy peasy
+
+left at
+https://youtu.be/bfCHIibRbzg?t=1071
