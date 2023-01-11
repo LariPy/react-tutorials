@@ -136,5 +136,12 @@ part 22
 
 redux easy peasy
 
-left at
-https://youtu.be/bfCHIibRbzg?t=1071
+part 23
+
+deploy time
+
+but
+problem with posts
+the text doesn't work right
+in the from
+there are no line breaks?
